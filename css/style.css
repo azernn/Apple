@@ -1,0 +1,591 @@
+:root{
+    --gray:#f2f2f2;
+    --blue:#0071e3;
+}
+*{font-family: Arial, Helvetica, sans-serif;}
+section{padding: 40px;}
+.bgwhite{background-color: #fbfbfb;}
+.bgfff{background-color: #fff;}
+.bggray{background-color: var(--gray) ;}
+.textcenter{text-align: center;}
+.tag{font-size: .8em; color: #bf4800;}
+.container{padding: 0 15px;}
+.link{
+        color:var(--blue);
+        font:1em Arial, Helvetica, sans-serif;
+        display: inline-block;
+        padding: 15px;
+}
+.link::after{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: transparent;
+}
+.link:hover::after{animation: underline .8s linear forwards;}
+@keyframes underline {
+    0% {
+        background: transparent;
+        width: 0;
+    }
+
+    25% {
+        background: yellow;
+        width: 25%;
+    }
+
+    50% {
+        background: linear-gradient(to right, yellow, orange);
+        width: 50%;
+    }
+
+    75% {
+        background: linear-gradient(to right, yellow, orange, green);
+        width: 75%;
+    }
+
+    100% {
+        background: linear-gradient(to right, yellow, orange, green, blue);
+        width: 100%;
+    }
+}
+.btnlink{
+    display: inline-block;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    margin: 10px 0;
+    transition: all 0.3s;
+    background: var(--blue);
+}
+.btnlink:hover{box-shadow: 3px 5px 7px #010e42;}
+#white .btnlink:hover{box-shadow: 3px 5px 7px rgb(172, 185, 236);}
+h2{
+    font: 400 2em/ 0.8 Arial;
+    margin: 20px 0;
+}
+h4,h5{font: 600 1.4em Arial;}
+h6{
+    font: 400 1.1em Arial;
+    margin: 10px
+}
+p{
+    padding: 20px 0;
+    font-size: .9em;
+}
+header{
+    background-color: var(--gray);
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        #headermenu{
+            display: none;
+        }
+        .headericons{
+            display: flex;
+            gap: 12px;
+        }
+    }
+    .sidebar{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: .6s;
+        .x{
+            text-align: right;
+            margin: 10px 50px;
+        }
+        menu{
+            padding: 20px 40px;
+            font: 1.2em / 2 Arial;
+            a{
+                color: black;
+            }
+        }
+    }
+    input{
+        display: none;
+    }
+    #inp:checked~.sidebar{
+        left: 0;
+    }
+    .slide{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        overflow-x: scroll;
+        div{
+            text-align: center;
+            padding: 10px;
+            p{
+                font-size: .7em;
+                padding: 0;
+            }
+            span{
+                font-size: .6rem;
+            }
+        }
+}
+.slide::-webkit-scrollbar{display: none;}
+.headerbottom{
+    padding: 20px 0 0 0;
+}
+}
+.titanium{
+    background-color: black;
+    padding-top: 40px;
+    p{color: #fff;}
+    h6{color: #8b887eff;}
+   
+    .titaniumtext{
+        background: url('../img/titanium.jpeg') center / contain no-repeat;
+        height: 40px;
+        padding: 20px;
+    }
+    .titamiumbg{
+        background: url('../img/titanium-mobile.jpeg')center/contain no-repeat;
+        height: 50vh;
+        width: 60%;
+        margin: auto;
+    }
+}
+.light{
+   .lighbg{
+    background: url('../img/newphoria.jpeg')center/contain no-repeat;
+    height: 20vh;
+    
+}
+}
+#pp{
+    h1{
+        padding: 10px 0;
+        color: #1e3791;
+        line-height: 40px;
+        font-size: 2em;
+    }
+    p{font-size: 1.2em;}
+    .ppimg{
+        background: url('../img/lovebg.jpeg') center/contain no-repeat;
+        height: 50vh;
+ 
+    }
+    
+}
+
+.qarabg{
+    background: url('../img/applebg12.jpeg') center/cover no-repeat;
+    height: 50vh;
+    border-radius: 30px;
+    margin: 20px;
+}
+.qaratext{text-align: center;}
+.detflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    hr{
+        width: 65%;
+        margin: auto;
+    }
+    .detailcard{
+        flex: 0 1 275px;
+       .imgs{
+        height: 300px;
+        padding: 0 10px;
+       }
+       p{padding: 10px 0 0 0;}
+    }
+    .aboutphone{
+        p{
+            font:0.7em / 2 Arial;
+            padding: 0;
+        }
+        div{padding: 20px 0;}
+        img{width: 43px;}
+    }
+}
+.phone{
+    height: 85%;
+    width: 100%;
+    object-fit: contain;
+    padding: 20px 0 10px 0;
+}
+.links{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.flexcards{
+    h4{padding: 30px;}
+.flexcard1{
+    margin: 20px 10px;
+    padding: 11px;
+    width: 100%;
+.cardbg1{
+    background: url('../img/savei_phone.jpg')center/contain no-repeat;
+    height: 30vh;
+}
+}
+.card66{
+display: flex;
+gap: 25px;
+}
+.flexcard2{
+    padding: 21px;
+    width: 50%;
+.cardbg2{
+        background: url('../img/appleemoji.jpeg')center/contain no-repeat;
+        height: 20vh;
+    }
+.cardbg3{
+    background: url('../img/aplepphone.jpeg')center/contain no-repeat;
+    height: 32vh;
+}
+    p{color:#6e6e73;padding: 0;}
+}
+}
+.why{ 
+    display: flex;
+    padding: 30px;
+    margin: 20px 10px;
+    .mobilbg{
+        height: 30vh;
+        background: url('../img/applebg6.jpeg')center/cover no-repeat;
+    }
+}
+.h30{
+    height: 30vh;
+    margin: 30px 0;
+}
+.w50{width: 50%;}
+
+.accessories{ 
+    p{
+        font: 1.1em/1.5 Arial;
+        max-width: 278px;
+        margin: auto;
+    }
+    .megabg{background: url('../img/applephones.jpeg') center/contain no-repeat;}
+    .airbg{ background: url('../img/airtag__b81h4czx41yq_medium.jpg')center/cover no-repeat;}
+    .airpodbg{
+        height: 20vh;
+        background: url('../img/applebg9.jpeg')center/contain no-repeat;
+    }
+}
+.acces{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.acces,.col,.iphone,.ios17,.card,.ppflex{
+    margin: 20px 10px;
+    padding: 10px;
+}
+.fpg{
+    .serv{
+        padding: 30px 10px;
+        p{padding: 0;font-size: 1em;}
+        h5{margin: 20px 0 10px 0;}
+        .fa-box,.fa-circle-dollar-to-slot,.fa-user-group{
+            font-size: 4em;
+            color: gray;
+        }
+    }
+}
+.iosbg{background: url('../img/ios17.jpg')center/cover no-repeat;}
+.flexs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .switchbg{background: url('../img/applebg.jpeg')center/cover no-repeat;}
+    .privacybg{background: url('../img/privacy.jpg') center/cover no-repeat;}
+    .iphone{width: 100%;}
+}
+.top,.card{
+    p{font-size: 1.4em}
+}
+.buttombg{
+    background: url('../img/applebg2.jpeg')center/contain no-repeat ;
+    height: 30vh;
+    width: 100%;
+    margin: 20px;
+}
+.bgblack{
+    color: white;
+    background-color: #090a0e;
+}
+.card{width: 100%;}
+.fa-apple{padding: 0 16px;}
+.tvbg,.musicbg,.fitnesbg,.arcadebg,.newsbg,.giftbg,.switchbg,.privacybg{height: 43vh;}
+.tvbg{background: url('../img/tv-_bg.png') center/cover no-repeat;}
+.musicbg{background: url('../img/music_bg.jpg')center 30%/cover no-repeat;}
+.fitnesbg{background: url('../img/fitness_bg.jpg') center/cover no-repeat;}
+.arcadebg{background: url('../img/arcade_bg.png')center/contain no-repeat;}
+.newsbg{background: url('../img/news_bg.jpeg')center/cover no-repeat;}
+.giftbg{background: url('../img/gift_bg.jpg')center/cover no-repeat;}
+.researchbg{
+    background: url('../img/research_app.jpg') center/contain no-repeat ;
+    height: 30vh;
+}
+#text{
+    color: #0000007a;
+    font-size: .9em;
+    line-height:17px;
+    p{padding: 0;font-size: 1em;}
+}
+footer {
+    color: #000000bd;
+    a{
+    font-size: 0.8em;
+    color: #000000bd;
+}
+    .footertop {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin: 10px 0 20px 10px;
+
+        .fa-apple {
+            font-size: 1.5rem;
+            color: #000;
+        }
+    }
+}
+
+.footermenu label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    i {transition: .3s;}
+}
+
+.wd20 div {
+    border-bottom: 1px solid #dee2e6;
+    input{display: none;}
+}
+
+.footerul {
+    max-height: 0;
+    overflow: hidden;
+    line-height: 1.5em;
+    transition: ease-in .4s;
+    padding: 0 0 0 20px;
+}
+.footerul li:nth-last-child(1) {padding: 0 0 16px 0;}
+
+#shop:checked~ul,
+#wallet:checked~ul,
+#account:checked~ul,
+#entertainment:checked~ul,
+#appstore:checked~ul,
+#business:checked~ul,
+#education:checked~ul,
+#care:checked~ul,
+#gover:checked~ul,
+#value1:checked~ul,
+#value2:checked~ul {
+    max-height: 300px;
+}
+
+#shop:checked~label i,
+#wallet:checked~label i,
+#account:checked~label i,
+#entertainment:checked~label i,
+#appstore:checked~label i,
+#business:checked~label i,
+#education:checked~label i,
+#care:checked~label i,
+#gover:checked~label i,
+#value1:checked~label i,
+#value2:checked~label i {
+    transform: rotate(180deg);
+}
+
+footer p {
+    margin: 20px 0;
+    .footerlink {
+        color: var(--blue);
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        max-width: 1200px;
+        margin: auto;
+        .sidebar, label{
+            display: none;
+        }
+        #headermenu{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+        li{display: inline-block;
+            a{
+                color: black;
+                font: bold .7em  Arial, Helvetica, sans-serif;
+                position: relative;
+                padding: 7px 0;
+            }
+            a::after {
+                content: "";
+                position: absolute;
+                width: 0px;
+                height: 2px;
+                right: 50%;
+                bottom: 0;
+                background: black;
+                transition: .5s;
+            }
+            a:hover::after {
+                width: 100%;
+                right: 0;
+            }
+        }
+    }
+    }
+    .titamiumbg{
+        background: url('../img/titanium-pc.png')center/contain no-repeat!important;
+    }
+    h2{font-size: 2.8em;}
+    .lighbg{
+        background-size: cover!important;
+        height: 56vh!important;
+        margin: 20px 0;
+    }
+    
+    .ppflex{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        h1{
+            line-height: 70px;
+            font-size: 3em;
+        }
+        .ppimg,.researchbg{width: 50%;}
+        .ppimg{height: 100vh!important;}
+    }
+.qaraqaqas{position: relative;}
+.qaratext{
+    position: absolute;
+    top: 34%;
+    left: 8%;
+    color: white;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    i{
+        display:none ;
+    }
+    a{
+        background-color: #ffffcc;
+        border-radius: 30px;
+        font-size: .8em;
+        padding: 8px 20px;
+        color: black;
+    }
+}
+.detflex{
+    .detailcard{
+    hr{width: 100%;}
+}
+}
+.qarabg{height: 100vh;}
+
+.why{
+    background: url('../img/applebg6.jpeg')center/cover no-repeat;
+    height: 80vh;
+    div{
+        width: 460px;
+        margin: auto;
+    }
+}
+.mobilbg{display: none;}
+.acces{
+    flex-direction: row!important;
+.airbg{
+    background: url('../img/appleanahtarlik.jpeg')center/contain no-repeat;
+    height: 60vh; 
+    order: -1;
+}
+.megabg{height: 60vh;}
+}
+.fpg{
+    display: flex; 
+    flex-wrap: wrap;
+    .serv{
+        width: 33.33%;
+        flex: 1 1 33.33%;
+    }
+}
+.iosbg,.tvbg,.researchbg{height: 50vh;}
+.flexs{flex-direction: row;}
+.top{
+    h2{font-size: 4em;}
+}
+.buttombg{
+    width: 50%;
+    height: 50vh;
+    order: -1;
+}
+.applecards{
+    display: flex;
+    .card{width: 50%;}
+}
+.researchtext{
+    p{font-size: 1em;}
+    width: 50%;
+}
+.footermenu {
+    display: flex;
+    label a {
+        font-size: 1.2em;
+        display: inline-block;
+    }
+}
+.footerul {max-height: 300px;}
+.wd20 {
+    width: 20%;
+    div {
+        border-bottom: none;
+        i {
+            display: none;
+        }
+    }
+}
+.footerbottom {
+    display: flex;
+    justify-content: space-between;footerbottom
+}
+}
+@media only screen and (max-width: 767px) {
+    .card66{flex-direction: column;}
+    .flexcard2{width: 100%!important;}
+}
+@media only screen and (min-width:890px) {
+    .detflex{
+        .detailcard{ flex: 0 1 25%;}
+    }
+}
+@media only screen and (min-width: 992px) {
+.flexcards{
+    display: flex;
+    gap: 20px;
+    .flexcard1{
+        margin: 0;
+        width: 33.33%;
+    }
+    .card66{width: 66.66%;}
+}
+}
