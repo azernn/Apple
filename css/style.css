@@ -520,9 +520,9 @@ footer p {
     background: url('../img/appleanahtarlik.jpeg')center/contain no-repeat;
     order: -1;
 }
-.megabg,.airbg{height: 60vh;}
-.megabg,.airbg{width: 50%;}
-
+.megabg,.airbg{
+    height: 60vh;
+    width: 50%;}
 }
 .fpg{
     display: flex; 
