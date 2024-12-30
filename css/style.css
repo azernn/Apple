@@ -278,6 +278,8 @@ gap: 25px;
         height: 20vh;
         background: url('../img/applebg9.jpeg')center/contain no-repeat;
     }
+    .megabg,.airbg{width: 100%;}
+
 }
 .acces{
   display: flex;
@@ -516,10 +518,11 @@ footer p {
     flex-direction: row!important;
 .airbg{
     background: url('../img/appleanahtarlik.jpeg')center/contain no-repeat;
-    height: 60vh; 
     order: -1;
 }
-.megabg{height: 60vh;}
+.megabg,.airbg{height: 60vh;}
+.megabg,.airbg{width: 50%;}
+
 }
 .fpg{
     display: flex; 
@@ -566,7 +569,7 @@ footer p {
 }
 .footerbottom {
     display: flex;
-    justify-content: space-between;footerbottom
+    justify-content: space-between;
 }
 }
 @media only screen and (max-width: 767px) {
