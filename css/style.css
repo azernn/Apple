@@ -96,7 +96,7 @@ header{
         position: fixed;
         top: 0;
         left: -100%;
-        transition: .6s;
+        transition: .9s;
         .x{
             text-align: right;
             margin: 10px 50px;
@@ -424,9 +424,9 @@ footer p {
     .container{
         max-width: 1200px;
         margin: auto;
-        .sidebar, label{
+        .sidebar{
             display: none;
-        }
+        } 
         #headermenu{
             display: flex;
             justify-content: space-between;
@@ -455,6 +455,11 @@ footer p {
             }
         }
     }
+    }
+    header{
+        label{
+            display: none;
+        }
     }
     .titamiumbg{
         background: url('../img/titanium-pc.png')center/contain no-repeat!important;
